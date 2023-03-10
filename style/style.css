@@ -2,7 +2,7 @@ body {
     display: flex;    
     justify-content: center;
     flex-direction: column;
-    padding: 0 25% 0 25%;
+    padding: 0 15% 0 15%;
     background-color:gainsboro;
 }
 .text {
@@ -32,7 +32,7 @@ body {
 }
 img {
     width: 100%;
-    margin-top: 25%;
+    margin-top: -10%;
 }
 #btn {
     width: 80%;
