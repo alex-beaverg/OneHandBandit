@@ -1,0 +1,51 @@
+body {
+    display: flex;    
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 25% 0 25%;
+    background-color:gainsboro;
+}
+.text {
+    width: 100%;
+    height: calc(2em + 2vw);
+    text-align: center;
+    padding-top: calc(1em + 1vw);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: calc(0.8em + 1vw);
+    font-weight: 700;
+}
+.text span {
+    font-size: 15px;
+    color: black;
+}
+#wish {
+    color: blue;
+}
+.outside {
+    display: flex;
+    justify-content: center;
+    height: calc(1em + 10vw);
+}
+.block {    
+    width: 20%;
+    text-align: center;    
+}
+img {
+    width: 100%;
+    margin-top: 25%;
+}
+#btn {
+    width: 80%;
+    height: 100%;
+    border-radius: 0.5em;
+    border: solid 0px black;
+    background-color: goldenrod;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: calc(0.8em + 1vw);
+    font-weight: 800;
+    color: lightcyan;
+}
+#btn:hover {
+    background-color: brown;
+    cursor: pointer;
+}
