@@ -18,6 +18,14 @@ body {
     font-size: 15px;
     color: black;
 }
+.text p {
+    font-size: calc(0.4em + 0.4vw);  
+    font-weight: 400;
+}
+.text h1 {
+    font-size: calc(0.5em + 0.5vw);     
+    margin-top: 0px;
+}
 #wish {
     color: blue;
 }
@@ -46,6 +54,95 @@ img {
     color: lightcyan;
 }
 #btn:hover {
-    background-color: brown;
+    background-color: rgb(185, 141, 30);
     cursor: pointer;
+}
+#table {
+    padding-top: 10px;  
+    padding-bottom: 20px;  
+    line-height: 15px;
+    height: auto;    
+}
+#del {
+    padding-top: 0px;      
+    line-height: 0px;
+    height: auto;    
+}
+.just_btn {
+    border-radius: 0.4em;
+    border: solid 1px dimgrey;
+    height: 35px;
+}
+.just_btn:hover {   
+    color: dimgrey; 
+    cursor: pointer;
+}
+#rules {
+    height: auto;
+}
+#menu a {
+    text-decoration: none;  
+    font-size: calc(0.5em + 0.5vw);  
+    color: dimgray;
+}
+#menu a:hover {
+    color: black;
+}
+#menu {
+    font-size: calc(0.5em + 0.5vw); 
+    color: darkgray;
+}
+#unlink a:hover {
+    color: black;
+}
+#unlink a {
+    color: black;
+}
+#rules img {
+    margin-top: 0px;
+    width: 50%;
+}
+#us {
+    font-size: 100%; 
+}
+
+
+/* Animation */
+img {    
+    animation-name: Show;        
+    animation-timing-function: cubic-bezier(.1,-.6,.2,0);
+}
+#cell-1 {
+    animation-duration: 0.2s;
+}
+#cell-2 {
+    animation-duration: 0.4s;
+}
+#cell-3 {
+    animation-duration: 0.6s;
+}
+#cell-4 {
+    animation-duration: 0.8s;
+}
+#cell-5 {
+    animation-duration: 1.0s;
+}
+#cell-6 {
+    animation-duration: 2.0s;
+}
+@-webkit-keyframes Show {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+@-o-keyframes Show {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+@-moz-keyframes Show {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+@keyframes Show {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
 }

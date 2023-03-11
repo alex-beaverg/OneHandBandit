@@ -2,35 +2,50 @@
 <html>
     <head>
         <meta charset="utf-8" />
-        <title>One Hand Bandit</title>
-        <link rel="stylesheet" href="style/style.css">        
+        <title>One Hand Bandit: Game</title>
+        <link rel="stylesheet" href="style/style.css">            
+        <link rel="preload" href="./images/item01.png" as="image" />  
+        <link rel="preload" href="./images/item01gr.png" as="image" />  
+        <link rel="preload" href="./images/item02.png" as="image" />  
+        <link rel="preload" href="./images/item02gr.png" as="image" />  
+        <link rel="preload" href="./images/item03.png" as="image" />  
+        <link rel="preload" href="./images/item03gr.png" as="image" />  
+        <link rel="preload" href="./images/item04.png" as="image" />  
+        <link rel="preload" href="./images/item04gr.png" as="image" />  
+        <link rel="preload" href="./images/item05.png" as="image" />  
+        <link rel="preload" href="./images/item05gr.png" as="image" />  
+        <link rel="preload" href="./images/item06.png" as="image" />  
+        <link rel="preload" href="./images/item06gr.png" as="image" />  
+        <link rel="preload" href="./images/item07.png" as="image" />  
+        <link rel="preload" href="./images/item07gr.png" as="image" />  
+        <link rel="preload" href="./images/item08.png" as="image" />  
+        <link rel="preload" href="./images/item08gr.png" as="image" />  
+        <link rel="preload" href="./images/item09.png" as="image" />  
+        <link rel="preload" href="./images/item09gr.png" as="image" />  
     </head>
-    <body>
+    <body>        
         <div class="text" id="wish">
             Good Luck, My Friend!
         </div>
         <div class="outside">            
-            <div class="block" id="bl-1">
-                
-            </div>
-            <div class="block" id="bl-2">
-                
-            </div>
-            <div class="block" id="bl-3">
-                
-            </div>
-            <div class="block" id="bl-4">
-                
-            </div>
-            <div class="block" id="bl-5">
-                
-            </div>
+            <div class="block" id="bl-1"></div>
+            <div class="block" id="bl-2"></div>
+            <div class="block" id="bl-3"></div>
+            <div class="block" id="bl-4"></div>
+            <div class="block" id="bl-5"></div>
         </div>
-        <div class="text" id="win">
-            
-        </div>
+        <div class="text" id="win"></div>
         <div class="text">
             <input id='btn' type="button" value="PLAY">
+        </div>
+        <div class="text" id="table"></div>
+        <div class="text" id="del"></div>
+        <div class="text" id="menu">     
+            <span id="unlink"><a>GAME</a></span> | 
+            <span><a href="rules.html">RULES</a></span> | 
+            <span><a href="settings.html">SETTINGS</a></span> |
+            <span><a href="scores.html">SCORES</a></span> |
+            <span><a href="about.html">ABOUT</a></span>  
         </div>
     </body>
     <script src="script/script.js"></script>
