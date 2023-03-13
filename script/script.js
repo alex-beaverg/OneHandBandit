@@ -9,6 +9,7 @@ let results = document.getElementById('table');
 localStorage.clear();
 let del_res = document.getElementById('del');
 let blocks = [block1, block2, block3, block4, block5];
+
 for (let i = 0; i < 5; i++) {    
     blocks[i].innerHTML = '<img id="cell-' + (i + 1) + '" src="./images/item05.png">';
 }
