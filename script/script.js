@@ -20,6 +20,26 @@ let count_wins = 0;
 function reload() {
     location.reload();
 }
+function suffix(cnt_w) {
+    suff = 'th';  
+    if (cnt_w % 10 == 1 && cnt_w % 100 != 11) {
+        suff = 'st';
+    }
+    else if (cnt_w % 10 == 2 && cnt_w % 100 != 12) {
+        suff = 'nd';
+    } 
+    else if (cnt_w % 10 == 3 && cnt_w % 100 != 13) {
+        suff = 'rd';
+    }
+    return suff;
+}
+function ending(number) {
+    end = 's';
+    if (number == 1) {
+        end = '';
+    }
+    return end;
+}
 function go() {
     let nums = [0, 0, 0, 0, 0];
     let cnt = [0, 0, 0, 0, 0, 0, 0, 0, 0];
@@ -62,12 +82,12 @@ function go() {
         if (count_wins == 1) {
             results.innerHTML += '<span>YOUR RESULTS ARE:</span><br>';
         }
-        localStorage.setItem(count_wins, count);         
-        results.innerHTML += '<span>' + count_wins + ' game: ' + localStorage.getItem(count_wins) + ' moves with ' + won + ' matches</span><br>';
+        localStorage.setItem(count_wins, count);           
+        results.innerHTML += '<span>' + count_wins + suffix(count_wins) + ' game: ' + localStorage.getItem(count_wins) + ' move' 
+            + ending(localStorage.getItem(count_wins)) + ' with ' + won + ' matches</span><br>';
         count = 0;   
         if (count_wins == 1) {
-            del_res.innerHTML = '<input class="just_btn" id="reload" type="button" value="  DELETE RESULTS  "> ';
-            del_res.innerHTML += '<input class="just_btn" type="button" value="  SAVE RESULTS  ">';
+            del_res.innerHTML = '<input class="just_btn" id="reload" type="button" value="  DELETE RESULTS  "> ';            
         }    
     }
     else {
