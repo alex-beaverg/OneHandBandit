@@ -105,6 +105,12 @@ img {
 #us {
     font-size: 100%; 
 }
+.bright_text {
+    color: rgb(211, 43, 43);
+}
+.bright_link {
+    color: rgb(84, 35, 199);
+}
 
 p a {
     text-decoration: none;  
